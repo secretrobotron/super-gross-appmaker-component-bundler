@@ -52,5 +52,5 @@ do
   # echo http://mozilla-appmaker.github.io/$FILE_PATH
   # echo $APPMAKER_DIR/public/bundles/components/$FILE_PATH
   mkdir -p $(dirname $APPMAKER_DIR/public/bundles/components/${FILE_PATH})
-  curl http://mozilla-appmaker.github.io/$FILE_PATH > ~/projects/mozilla-appmaker/appmaker/public/bundles/components/$FILE_PATH 2> /dev/null
+  curl http://mozilla-appmaker.github.io/$FILE_PATH > $APPMAKER_DIR/public/bundles/components/$FILE_PATH 2> /dev/null
 done
